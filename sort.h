@@ -37,5 +37,5 @@ void quicksort_hoare(int *array, int begining, int end, size_t size);
 int partition_hoare(int *array, int begining, int end, size_t size);
 void counting_sort(int *array, size_t size);
 void merge_sort(int *prmArray, size_t prmSize);
-
+void heap_sort(int *array, size_t size);
 #endif
