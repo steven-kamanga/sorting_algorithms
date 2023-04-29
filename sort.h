@@ -38,4 +38,8 @@ int partition_hoare(int *array, int begining, int end, size_t size);
 void counting_sort(int *array, size_t size);
 void merge_sort(int *prmArray, size_t prmSize);
 void heap_sort(int *array, size_t size);
+void radix_sort(int *array, size_t size);
+void countsort(int *array, size_t size, size_t xxl);
+void heaps(int *array, size_t size, size_t i, size_t size2);
+
 #endif

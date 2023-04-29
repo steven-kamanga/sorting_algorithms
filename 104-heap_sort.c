@@ -1,8 +1,5 @@
 #include "sort.h"
 
-/*Prototype: void heap_sort(int *array, size_t size);*/
-void heaps(int *array, size_t size, size_t i, size_t size2);
-
 /**
  *heap_sort - Sorts an array of integers in ascending order
  *using the Heap sort algorithm
@@ -46,8 +43,8 @@ void heap_sort(int *array, size_t size)
 void heaps(int *array, size_t size, size_t i, size_t size2)
 {
 	size_t max = i;
-	size_t left = 2 * i + 1;
-	size_t right = 2 * i + 2;
+	size_t left = 2 *i + 1;
+	size_t right = 2 *i + 2;
 	int temp;
 
 	if (left < size && array[left] > array[max])
