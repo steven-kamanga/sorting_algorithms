@@ -88,13 +88,16 @@ void merge_recurr(int *ar, int *array, size_t left, size_t right)
 
 void merge_sort(int *array, size_t size)
 {
-	int *ar;
+    int *ar;
 
-	if (array == NULL || size < 2)
-		return;
+    if (array == NULL || size < 2)
+        return;
 
-	ar = malloc(sizeof(int) * size);
+    ar = malloc(sizeof(int) * size);
+    if (ar == NULL)
+        return;
 
-	merge_recurr(ar, array, 0, size - 1);
-	free(ar);
+    merge_recurr(ar, array, 0, size);
+
+    free(ar);
 }
