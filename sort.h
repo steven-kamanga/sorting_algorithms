@@ -41,5 +41,4 @@ void heap_sort(int *array, size_t size);
 void radix_sort(int *array, size_t size);
 void countsort(int *array, size_t size, size_t xxl);
 void heaps(int *array, size_t size, size_t i, size_t size2);
-
 #endif
