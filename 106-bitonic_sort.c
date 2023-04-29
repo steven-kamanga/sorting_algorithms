@@ -34,7 +34,7 @@ void bitonic_recurr(int *array, int low, int high, size_t size, int dir)
     if (high - low > 1)
     {
         mid = (high + low) / 2;
-        printf("Merging [%d/%d] (%d)\n", high - low, (int)size, dir);
+        printf("Merging [%d/%d]", high - low, (int)size);
         if(dir)
             printf("(UP):\n");
         else
@@ -43,7 +43,7 @@ void bitonic_recurr(int *array, int low, int high, size_t size, int dir)
         bitonic_recurr(array, low, mid, size, 1);
         bitonic_recurr(array, mid, high, size, 0);
         bitonic_merge(array, low, high, size, dir);
-        printf("Result [%d/%d] (%d):", high - low, (int)size, dir);
+        printf("Result [%d/%lu] ", high - low + 1, size);
         if(dir)
             printf("(UP):\n");
         else
